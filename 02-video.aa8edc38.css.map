@@ -1,0 +1,1 @@
+{"mappings":"ACAA","sources":["02-video.aa8edc38.css","src/css/02-video.css"],"sourcesContent":[".video-player {\n  border-radius: 10px;\n  margin: auto;\n  display: block;\n}\n\n/*# sourceMappingURL=02-video.aa8edc38.css.map */\n",".video-player{\n   display: block;\n   margin:auto;\n   border-radius: 10px;\n}"],"names":[],"version":3,"file":"02-video.aa8edc38.css.map"}
