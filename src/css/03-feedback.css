@@ -1,0 +1,43 @@
+/* body {
+  background-image: url('https://i.pinimg.com/originals/f7/44/06/f744060231b6aaecd96b158c50b35a84.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}  */
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  padding: 20px;
+  margin: auto;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+  background-color: rgba(4, 89, 83, 0.654);
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.feedback-form button {
+  padding: 8px 12px;
+  font: inherit;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  font: inherit;
+  border-radius: 5px;
+  background-color: rgb(196, 196, 199);
+}
+
+textarea {
+  resize: none;
+}

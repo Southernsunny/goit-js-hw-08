@@ -4,11 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <link rel="stylesheet" href="./css/common.css" />
   </head>
   <body>
+    <div class="div"></div>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <ul class="list">
+      <li class="item">
+        <a href="./01-gallery.html" class="link btn"><span>Image gallery</span></a>
+      </li>
+      <li class="item">
+        <a href="./02-video.html" class="link btn"><span>Video playback</span></a>
+      </li>
+      <li class="item">
+        <a href="./03-feedback.html" class="link btn"><span>Feedback form</span></a>
+      </li>
+    </ul>
   </body>
 </html>
