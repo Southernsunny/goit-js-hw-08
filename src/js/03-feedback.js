@@ -42,16 +42,12 @@ form.addEventListener('submit', event => {
   localStorage.removeItem(STORAGE_KEY);
 });
 
+// alert
 form.addEventListener('submit', event => {
   event.preventDefault();
 
-  if (!emailInput.value) {
-    alert('Please fill in your email');
-    return;
-  }
-
-  if (!messageInput.value) {
-    alert('Please fill in your message');
+  if (!emailInput.value || !messageInput.value) {
+    alert('Будь ласка, заповніть обидва поля.');
     return;
   }
 
