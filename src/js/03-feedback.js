@@ -42,6 +42,33 @@ form.addEventListener('submit', event => {
   localStorage.removeItem(STORAGE_KEY);
 });
 
+form.addEventListener('submit', event => {
+  event.preventDefault();
+
+  if (!emailInput.value) {
+    alert('Please fill in your email');
+    return;
+  }
+
+  if (!messageInput.value) {
+    alert('Please fill in your message');
+    return;
+  }
+
+  const state = {
+    email: emailInput.value,
+    message: messageInput.value,
+  };
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+
+  console.log(state);
+
+  emailInput.value = '';
+  messageInput.value = '';
+
+  localStorage.removeItem(STORAGE_KEY);
+});
+
 // import throttle from 'lodash.throttle';
 
 // const refs = {
