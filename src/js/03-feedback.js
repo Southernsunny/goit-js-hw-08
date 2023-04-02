@@ -43,27 +43,8 @@ form.addEventListener('submit', event => {
 });
 
 // alert
-form.addEventListener('submit', event => {
-  event.preventDefault();
 
-  if (!emailInput.value || !messageInput.value) {
-    alert('Будь ласка, заповніть обидва поля.');
-    return;
-  }
 
-  const state = {
-    email: emailInput.value,
-    message: messageInput.value,
-  };
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-
-  console.log(state);
-
-  emailInput.value = '';
-  messageInput.value = '';
-
-  localStorage.removeItem(STORAGE_KEY);
-});
 
 // import throttle from 'lodash.throttle';
 
