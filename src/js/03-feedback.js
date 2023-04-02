@@ -28,6 +28,12 @@ form.addEventListener('input', event => {
 form.addEventListener('submit', event => {
   event.preventDefault();
 
+    if (!emailInput.value || !messageInput.value) {
+      // Перевірка на заповнення полів
+      alert('Будь ласка, заповніть всі поля');
+      return;
+    }
+  
   const state = {
     email: emailInput.value,
     message: messageInput.value,
@@ -41,9 +47,6 @@ form.addEventListener('submit', event => {
 
   localStorage.removeItem(STORAGE_KEY);
 });
-
-// alert
-
 
 
 // import throttle from 'lodash.throttle';
